@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__content content-header">
+				<div class="content-header__container">
+					<div class="content-header__info">
+						<div class="content-header__logo">
+							<a href="#"></a>
+						</div>
+						<div class="content-header__name">шапка</div>
+						<div class="content-header__search">
+							<form class="form-header" action="#">
+								<div class="form-header__line">
+									<input class="form-header__input" type="search" name="search" placeholder="Пошук на сайті">
+									<button class="form-header__button" type="submit">Шукати</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__forms forms-page">
+				<div class="forms-page__container">
+					<div class="forms-page__examples">
+						<h1 class="form-page__title">Анкета</h1>
+						<form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts">
+							<div class="form__line">
+								<label class="from__label" for="name">Ваше ім'я:</label>
+								<input class="form__input" type="text" name="name" id="name" placeholder="Введіть ваше ім'я" required>
+								<label class="from__label" for="birth-date">Дата вашого народження:</label>
+								<input class="form__input" type="date" name="date" id="birth-date" placeholder="Дата вашого народження"
+									required>
+								<label class="from__label" for="education">Ваша освіта:</label>
+								<input class="form__input" type="text" name="education" id="education" placeholder="Ваша освіта"
+									required>
+								<label class="from__label" for="profession">Ваша професія:</label>
+								<input class="form__input" type="text" name="profession" id="profession" placeholder="Ваша професія"
+									required>
+							</div>
+							<div class="form__line">
+								<div class="form__radio radio">
+									<div class="radio__title">Ви одружений(-на)?</div>
+									<div class="radio__line">
+										<input class="radio__input" type="radio" name="status" id="status-yes" value="yes" required>
+										<label class="radio__label" for="status-yes">Так</label>
+									</div>
+									<div class="radio__line">
+										<input class="radio__input" type="radio" name="status" id="status-no" value="no" required>
+										<label class="radio__label" for="status-no">Ні</label>
+									</div>
+									<div class="radio__title">У вас є діти?</div>
+									<div class="radio__line">
+										<input class="radio__input" type="radio" name="children" id="children-yes" value="yes" required>
+										<label class="radio__label" for="children-yes">Так</label>
+									</div>
+									<div class="radio__line">
+										<input class="radio__input" type="radio" name="children" id="children-no" value="no" required>
+										<label class="radio__label" for="children-no">Ні</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__list">
+									<label lass="from__label" for="children-number">Кількість дітей:</label>
+									<select name="number-of-children" id="children-number">
+										<option value="0">Немає дітей</option>
+										<option value="1">Одна дитина</option>
+										<option value="2">Дві дитини</option>
+										<option value="3">Три дитини</option>
+										<option value="4">Чотири дитини</option>
+										<option value="5">П'ять дітей</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__checkbox checkbox">
+									<div class="checkbox__title">Оберіть дві найулюбленіші страви:</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="borsch" id="borsch">
+										<label class="checkbox__label" for="borsch">Борщ</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="roast" id="roast">
+										<label class="checkbox__label" for="roast">Печеня</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="pizza" id="pizza">
+										<label class="checkbox__label" for="pizza">Піца</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="burger" id="burger">
+										<label class="checkbox__label" for="burger">Бургер</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="carbonara" id="carbonara">
+										<label class="checkbox__label" for="carbonara">Паста карбонара</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="holubtsi" id="holubtsi">
+										<label class="checkbox__label" for="holubtsi">Голубці</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" name="varenyky" id="varenyky">
+										<label class="checkbox__label" for="varenyky">Вареники</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line">
+								<label class="from__label" for="favorite-number">Ваше улюблене число:</label>
+								<input class="form__input" type="number" name="number" id="favorite-number" value="0"
+									placeholder="Введіть ваше улюблене число">
+							</div>
+							<div class="form__line">
+								<div class="form__text">
+									<label class="from__label" for="addtionla-info">Напишіть додаткову інформацію про вас:</label>
+									<textarea class="from__area" rows="5" name="message" id="addtionla-info"
+										placeholder="Розкажіть про себе щось ще..." autocomplete="off"></textarea>
+								</div>
+							</div>
+							<div class="form__line">
+								<label class="from__label" for="phone">Ваша номер телефону:</label>
+								<input class="form__input" type="tel" name="phone" id="phone" placeholder="Введіть ваш номер телефону">
+								<label class="from__label" for="email">Електронна адреса:</label>
+								<input class="form__input" class="from__input" type="email" name="email" id="email" required
+									placeholder="Введіть ваш e-mail">
+								<label class="from__label" for="password"> Придумайте пароль:</label>
+								<input class="form__input" type="password" name="password" id="password" autocomplete="off"
+									placeholder="Введіть ваш пароль">
+							</div>
+							<div class="form__line">
+								<div class="form__checkbox checkbox">
+									<input class="checkbox__input" type="checkbox" name="personal-data" id="personal-data" required>
+									<label class="checkbox__label" for="personal-data">Даю згоду на обродку персональних даних</label>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__button">
+									<button class="button" type="submit">Зареєструватися</button>
+									<button class="button" type="reset">Спочатку</button>
+								</div>
+								<input class="form__input" name="token" value="new-ahsdfjklashl" type="hidden">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts-form">
+				<div class="contacts-form__content">
+					<div class="contacts-form__container">
+						<div class="contacts-form__block">
+							<div class="contacts-form__image">
+								<img src="img/contacts-section/illustration.svg" alt="Image">
+							</div>
+							<div class="contacts-form__text">
+								<div class="contacts-form__lable">Any questions?</div>
+								<h2 class="contacts-form__title">Drop us a line</h2>
+								<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+									<div class="form__contacts-line">
+										<div class="form__data data-form">
+											<div class="data-form__first-name data-form--flex">
+												<label class="form__lable" for="fits-name">First Name*</label>
+												<input class="form__input--contact" type="text" name="fits-name" id="fits-name"
+													placeholder="Your first name" required>
+											</div>
+											<div class="data-form__last-name data-form--flex">
+												<label class="form__lable" for="last-name">Last Name*</label>
+												<input class="form__input--contact" type="text" name="last-name" id="last-name"
+													placeholder="Your last name" required>
+											</div>
+											<div class="data-form__email data-form--flex">
+												<label for="email">Email*</label>
+												<input type="email" name="email" id="email" placeholder="Phone" required>
+											</div>
+											<div class="data-form__phone data-form--flex">
+												<label for="tel">Your working email</label>
+												<input type="tel" name="tel" id="tel" placeholder="Your phone number">
+											</div>
+										</div>
+										<div class="form__message">
+											<label for="message">Message*</label>
+											<textarea name="message" id="message" placeholder="Your message" required></textarea>
+										</div>
+										<div class="form__action">
+											<div class="form__checkbox checkbox-action">
+												<input class="checkbox-action__input" type="checkbox" name="agreement" id="agree" required>
+												<label class="checkbox-action__lable" for="agree">I agree to receive communications from Createx
+													Online School</label>
+											</div>
+											<div class="form__submit">
+												<button type="submit">Send message</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__container">
+					Футер
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
